@@ -1,0 +1,611 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background: #181D24;
+  color: white;
+  font-family: "Montserrat";
+}
+body a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat";
+}
+
+header {
+  background: #181D24;
+  font-weight: bold;
+  padding-top: 1.5rem !important;
+  height: 104px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navizda {
+  line-height: 30px;
+}
+.navizda .tlfn {
+  font-size: 18px;
+  margin-left: 0.7rem;
+}
+
+.navdrcha {
+  line-height: 30px;
+  text-align: right;
+}
+
+.menu {
+  font-size: 14px;
+  padding: 2px 10px;
+}
+.menu a {
+  margin-right: 0.5rem;
+}
+.menu .selected {
+  background: #978510;
+  padding: 2px 10px;
+}
+
+main .img-slider {
+  height: calc(87vh - 116px);
+  width: 100%;
+}
+
+.slogan {
+  font-size: 140px;
+  margin-top: -280px;
+  font-size: 182px;
+  font-weight: bold;
+  line-height: 180px;
+}
+
+.letra-peque {
+  font-size: 80px;
+  margin-top: 45px;
+}
+
+.flecha {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 2%;
+  left: 21.6%;
+  font-weight: 300;
+}
+
+.flecha img {
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+.flecha:hover img {
+  transform: translateY(-10px);
+}
+
+.formulario select {
+  width: 190px;
+  height: 50px;
+  margin-top: 90px;
+  border: 0px;
+  border-right: 1px solid #a7a4a4;
+}
+
+.boton-buscar {
+  width: 200px;
+  height: 50px;
+  background: #FFCB00;
+  color: white;
+  margin-top: 90px;
+  border: 0px;
+}
+
+.botones {
+  margin-top: 10px;
+  font-weight: bolder;
+}
+
+.boton-limpiar {
+  background: #333333;
+  color: white;
+  width: 250px;
+  height: 50px;
+  border: 0px;
+  font-weight: bold;
+}
+
+.boton-avanzada {
+  background: #978510;
+  color: white;
+  width: 250px;
+  height: 50px;
+  border: 0px;
+  font-weight: bold;
+}
+
+.futuro {
+  height: calc(87vh - 116px);
+  width: 100%;
+  margin-top: 30px;
+}
+
+.cards {
+  width: 390px;
+  height: 360px;
+  margin-top: -24%;
+  background: #181D24;
+  margin-right: 20px;
+  margin-left: 50px;
+  position: relative;
+  transition: 0.9s;
+}
+
+.cards:hover {
+  transition: 0.9s;
+  background: #FFCB00;
+}
+.cards:hover .alto {
+  background: #181D24;
+}
+.cards:hover .texto-alto-card {
+  color: #181D24;
+}
+
+.alto {
+  width: 60px;
+  height: 110px;
+  background: #FFCB00;
+}
+
+.bajo {
+  width: 60px;
+  height: 110px;
+  position: absolute;
+  bottom: 0;
+  background: #666666;
+}
+
+.texto-alto-card {
+  color: #FFCB00;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0px;
+  position: absolute;
+  top: 20px;
+  left: 80px;
+}
+
+.numero-card {
+  font-size: 66px;
+  margin-right: 20px;
+}
+
+.texto-bajo-card {
+  position: absolute;
+  bottom: 10px;
+  left: 80px;
+  font-weight: bold;
+}
+
+.propiedad {
+  margin-top: 150px;
+}
+
+.propiedad h2 {
+  font-size: 66px;
+  width: auto;
+  text-align: center;
+}
+
+.propiedad img {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  transition: 0.5s all ease-in-out;
+}
+
+.propiedad img:hover {
+  width: 100%;
+  overflow: hidden;
+  transform: scale(1.5);
+}
+
+.fotoPropiedad {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+.fotoPropiedad img {
+  max-width: 100%;
+  transition: all 0.3s;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+}
+
+.fotoPropiedad:hover img {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+.piso-mes {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: -8%;
+  margin-top: 3%;
+  min-height: 328px;
+  width: 33%;
+  background: #3c4146;
+  padding-left: 30px;
+  transition: transform 0.3s ease;
+  transition: 0.9s;
+}
+
+.fotoPropiedad:hover .piso-mes {
+  transition: 0.9s;
+  transform: translateX(30px);
+  background: #181D24;
+}
+
+.ref {
+  position: absolute;
+  left: 0;
+  background-color: #978510;
+  padding-left: 30px;
+  padding: 5px 10px 4px 12px;
+}
+
+.chalet {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.venta {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.elche h4 {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.datos {
+  font-size: 15px;
+}
+
+.datos2 {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.precio {
+  margin-top: 20px;
+  color: #ffcb00;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.venta-propiedad {
+  width: 100%;
+  padding: 12% 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.venta-propiedad h2 {
+  font-size: 50px;
+}
+
+.btn-venta {
+  background-color: #978510;
+  border-color: #978510;
+  color: white;
+  border-radius: 0;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  width: 300px;
+  height: 54px;
+  padding: 0 0.8rem;
+  line-height: 54px;
+}
+
+.btn-venta:hover {
+  background-color: #ad9915;
+  border-color: #ad9915;
+}
+
+.titulo-destacadas {
+  font-size: 60px;
+  text-align: center;
+}
+
+.letra-destacada {
+  font-family: caveat;
+  color: #978510;
+}
+
+.letra-destacada-blanca {
+  font-family: caveat;
+  color: white;
+}
+
+.card {
+  border: 0px;
+  background: #181D24;
+  color: white;
+  border-radius: 0px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.card img {
+  max-width: 100%;
+  transition: all 0.3s;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+}
+
+.card:hover img {
+  transform: scale(1.1);
+  overflow: hidden;
+  transition: 0.9s;
+}
+
+.card:hover {
+  background: #978510;
+  transition: 0.9s ease-in-out;
+}
+.card:hover .descripcion1, .card:hover .descripcion2 {
+  color: black;
+}
+.card:hover .precio2 {
+  color: white !important;
+}
+
+.descripcion1 {
+  border-right: 1px solid white;
+  font-size: 20px;
+  transition: 0.9s;
+}
+
+.precio2 {
+  color: #978510;
+  font-size: 18px;
+  letter-spacing: 1.8px;
+}
+
+.descripcion2 {
+  margin-left: 20px;
+  margin-top: 12%;
+  transition: 0.9s;
+}
+
+.ver-todas {
+  font-size: 25px;
+  margin-left: -10px;
+}
+
+.circulo-propiedades {
+  position: absolute;
+  left: 55%;
+}
+
+.bienvenida {
+  margin-top: 30px;
+}
+
+.texto-bienvenida {
+  margin-left: -40px;
+  margin-right: 106px;
+}
+.texto-bienvenida h1 {
+  font-size: 20px;
+  color: #978510;
+  font-weight: bold;
+}
+
+.foto2-bienvenida {
+  flex: 0;
+}
+
+.btn-sobre-nosotros {
+  background-color: #181D24;
+  border-color: #978510;
+  color: #978510;
+  border-radius: 0;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  width: 300px;
+  height: 54px;
+  padding: 0 0.8rem;
+  line-height: 54px;
+}
+
+.btn-sobre-nosotros:hover {
+  background-color: #978510;
+  border-color: #978510;
+  color: white;
+}
+
+.ultimas {
+  background-color: white;
+}
+.ultimas h2 {
+  color: #181D24;
+  font-weight: bold;
+  font-size: 87px;
+  transform: rotate(-90deg);
+  margin-top: 200px;
+  line-height: 70%;
+}
+.ultimas h2 .letra-destacada {
+  text-align: left;
+  margin-top: -10px;
+}
+
+.icono-plus {
+  margin-top: 340px;
+  transition: 1s;
+}
+
+.icono-plus:hover {
+  transform: rotateY(180deg);
+}
+
+.image-container {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  max-width: 100%;
+  justify-content: space-between;
+  transition: filter 0.3s #978510 ease-in-out;
+}
+
+.image-container img:hover {
+  opacity: 0.7;
+}
+
+.foto-final {
+  width: 100%;
+}
+
+.formulario-final {
+  background: #978510;
+  width: 100%;
+}
+.formulario-final span {
+  color: #181D24;
+}
+.formulario-final h3 {
+  line-height: 70%;
+}
+.formulario-final form {
+  width: 100%;
+}
+.formulario-final textarea, .formulario-final input[type=text] {
+  width: 100%;
+  background: #978510;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid white;
+  font-size: 14px;
+  font-weight: bold;
+  outline: none;
+}
+.formulario-final textarea::-moz-placeholder, .formulario-final input[type=text]::-moz-placeholder {
+  font-size: 14px;
+  color: white;
+}
+.formulario-final textarea::placeholder, .formulario-final input[type=text]::placeholder {
+  font-size: 14px;
+  color: white;
+}
+.formulario-final .centered-form {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40%;
+}
+.formulario-final .inline-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formulario-final .inline-group input[type=text] {
+  margin-right: 0px;
+}
+.formulario-final .politicas {
+  display: flex;
+  align-items: center;
+}
+.formulario-final input[type=checkbox] {
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: #978510;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin-right: 20px;
+}
+.formulario-final input[type=checkbox]:checked {
+  background: #181D24;
+  border: none;
+}
+.formulario-final input[type=checkbox]:hover {
+  background: #2f3947;
+}
+
+.btn-enviar {
+  background: #181D24;
+  border-color: #978510;
+  color: white;
+  border-radius: 0;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  width: 400px;
+  height: 54px;
+  padding: 0 0.8rem;
+  line-height: 54px;
+}
+
+.btn-enviar:hover {
+  background-color: #0e1115;
+  border-color: #978510;
+  color: white;
+}
+
+.centrar {
+  text-align: center;
+}
+
+footer p {
+  font-size: 40px;
+}
+footer p:hover {
+  color: yellow;
+}
+footer li {
+  margin-right: 10px;
+  font-weight: bold;
+  padding: 2px 10px;
+}
+footer li:hover {
+  background: #978510;
+}
+footer .corazon-footer:hover {
+  background: none;
+}
+footer .final {
+  background: #978510;
+}
+footer .final a:hover {
+  color: yellow;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,40 @@
+header{
+    background: #181D24;
+    font-weight: bold;
+    padding-top: 1.5rem !important;
+    height: 104px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navizda{
+    line-height: 30px;
+
+    .tlfn{
+        font-size: 18px;
+        margin-left: 0.7rem;
+    }
+}
+
+.navdrcha{
+    line-height: 30px;
+    text-align: right;
+}
+
+.menu{
+    font-size: 14px;
+    padding: 2px 10px;
+    a{
+        margin-right: 0.5rem;
+    }
+
+    .selected{
+        background: #978510;
+        padding: 2px 10px;
+    }
+}
+
+
+
+

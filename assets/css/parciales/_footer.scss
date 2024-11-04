@@ -1,0 +1,31 @@
+//FOOTER
+footer{
+    p{
+        font-size: 40px;
+    }
+    
+    p:hover{
+        color: yellow;
+    }
+    
+    li{
+        margin-right: 10px;
+        font-weight: bold;
+        padding: 2px 10px;
+    }
+
+    li:hover{
+        background: #978510;
+    }
+
+    .corazon-footer:hover{
+        background: none;
+    }
+
+    .final{
+        background: #978510;
+        a:hover{
+            color: yellow;
+        }
+    }
+}
